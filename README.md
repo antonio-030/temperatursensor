@@ -15,6 +15,8 @@ Hier sind die Schritte, um einen Temperatursensor zu bauen:
 
 3. Installieren Sie ESPHome auf https://www.home-assistant.io/. ESPHome ist eine Open-Source-Firmware, die es ermöglicht, ESP8266- und ESP32-Mikrocontroller als Smart-Home-Geräte einzurichten.
 
+![Screenshot 2023-01-13 004124](https://user-images.githubusercontent.com/99229976/212204420-26be2957-c39e-4a89-ba95-e7c3fa886c61.jpg)
+
 Home-Assistant ist eine Open-Source-Software, die als smart home-Hub verwendet wird. Es ermöglicht die Steuerung und Automatisierung von Geräten und Diensten in einem intelligenten Zuhause. Es unterstützt eine Vielzahl von Protokollen und Plattformen, einschließlich Zigbee, Z-Wave, Philips Hue, Nest und vielen mehr. Es kann auf einem Raspberry Pi oder einem anderen Computer ausgeführt werden und ermöglicht die Erstellung von Szenen, die die Steuerung von Geräten und Diensten nach Zeitplänen oder Ereignissen automatisieren.
 
 4. Erstellen Sie eine YAML-Datei für Ihren Temperatursensor. In dieser Datei konfigurieren Sie den Mikrocontroller und den Temperatursensor. Sie müssen beispielsweise den Pin angeben, an dem der Sensor angeschlossen ist, und welches Protokoll verwendet wird.
