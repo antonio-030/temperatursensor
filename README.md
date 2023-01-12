@@ -21,6 +21,8 @@ Home-Assistant ist eine Open-Source-Software, die als smart home-Hub verwendet w
 
 ![homeasstendjpg](https://user-images.githubusercontent.com/99229976/212205370-af1be8b6-884e-40aa-9f20-8709b1283d2d.jpg)
 
+![energy](https://user-images.githubusercontent.com/99229976/212205525-bb45ed86-fe0d-48b6-a44f-693175bbce19.jpg)
+
 4. Erstellen Sie eine YAML-Datei für Ihren Temperatursensor. In dieser Datei konfigurieren Sie den Mikrocontroller und den Temperatursensor. Sie müssen beispielsweise den Pin angeben, an dem der Sensor angeschlossen ist, und welches Protokoll verwendet wird.
 
 5. Übertragen Sie die YAML-Datei auf den Mikrocontroller. Sie können dies über die ESPHome-Weboberfläche oder die ESPHome-Kommandozeile tun.      
