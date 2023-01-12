@@ -2,7 +2,7 @@
 Um einen Temperatursensor mit ESPHome zu bauen,
 benötigen Sie einen ESP8266 oder ESP32 Mikrocontroller und einen Temperatursensor, der mit diesem Mikrocontroller kompatibel ist.
 Hier sind dieSchritte, um einen Temperatursensor zu bauen:
-
+![wemos-d1-mini-esp8266-4041305302](https://user-images.githubusercontent.com/99229976/212190994-6b7ca951-23d7-43ba-93cf-5314f3266812.jpg)
 1. Besorgen Sie sich einen ESP8266 Mikrocontroller sowie einen kompatiblen Temperatursensor. Ein gängiger Temperatursensor ist der BMP180.
 
 2. Verbinden Sie den Temperatursensor mit dem Mikrocontroller. Der BMP180 hat vier Pins: VIN, GND, SCL, SDA. Verbinden Sie VIN mit 3,3V, GND mit GND, SCL mit D1, SDA mit D2 digtallen Pin des Mikrocontroller.
