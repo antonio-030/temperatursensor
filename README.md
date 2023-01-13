@@ -63,6 +63,11 @@ sensor:
       return ((id(VCC).state /3.30) * 100.00);    
 ```
 
+Der deep_sleep Abschnitt legt fest, dass das System 20 Sekunden laufen und dann 900 Sekunden schlafen soll.
+Der i2c Abschnitt legt fest, dass der SDA-Pin an GPIO4, der SCL-Pin an GPIO5 angeschlossen ist und das Scannen auf "true" eingestellt ist.
+Der Sensorbereich listet drei Sensoren auf: ein BMP085-Sensor (für Temperatur und Druck), ein ADC-Sensor (zur Messung des VCC-Pins) und ein Template-Sensor (zur Messung des Batteriestands).
+Der BMP085-Sensor wird alle 5 Sekunden aktualisiert, der ADC-Sensor alle 60 Sekunden und der Template-Sensor alle 60 Sekunden und der template Sensor nutzt eine Lambda-Funktion um den Batteriestand zu berechnen.
+
 ![Screenshot 2023-01-13 004124](https://user-images.githubusercontent.com/99229976/212258143-8122eda8-6d64-4575-aa72-6a05cb7eb025.jpg)
 
 ![Screenshot 2023-01-13 080232](https://user-images.githubusercontent.com/99229976/212258434-5940bebe-32f4-414f-b3ff-32b37791ab52.jpg)
@@ -75,11 +80,6 @@ Home-Assistant https://www.home-assistant.io/ ist eine Open-Source-Software, die
 
 ![3d](https://user-images.githubusercontent.com/99229976/212207432-fa5be4e5-329c-4aa2-9ddf-2403cace3e53.jpg)
 
-
-Der deep_sleep Abschnitt legt fest, dass das System 20 Sekunden laufen und dann 900 Sekunden schlafen soll.
-Der i2c Abschnitt legt fest, dass der SDA-Pin an GPIO4, der SCL-Pin an GPIO5 angeschlossen ist und das Scannen auf "true" eingestellt ist.
-Der Sensorbereich listet drei Sensoren auf: ein BMP085-Sensor (für Temperatur und Druck), ein ADC-Sensor (zur Messung des VCC-Pins) und ein Template-Sensor (zur Messung des Batteriestands).
-Der BMP085-Sensor wird alle 5 Sekunden aktualisiert, der ADC-Sensor alle 60 Sekunden und der Template-Sensor alle 60 Sekunden und der template Sensor nutzt eine Lambda-Funktion um den Batteriestand zu berechnen.
 
 6. Überprüfen Sie, ob der Temperatursensor erfolgreich eingerichtet wurde. Sie sollten in der Lage sein, die gemessenen Temperaturen in der ESPHome-logs oder über eine integrierte Home-Automatisierungsplattform wie Home Assistant zu sehen.
 
