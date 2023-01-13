@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Antonio-030</h1>
+<h1 align="center">Hi 👋, Ich bin Antonio-030</h1>
 <h3 align="center">"Vereinfachen Sie Ihre Smart Home-Automatisierung mit Home-Assistant und ESPHome"</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=antonio-030&label=Profile%20views&color=0e75b6&style=flat" alt="antonio-030" /> </p>
@@ -54,6 +54,7 @@ Home-Assistant https://www.home-assistant.io/ ist eine Open-Source-Software, die
 
 ![3d](https://user-images.githubusercontent.com/99229976/212207432-fa5be4e5-329c-4aa2-9ddf-2403cace3e53.jpg)
 
+```yaml
 captive_portal:
 deep_sleep:
   run_duration: 20s
@@ -94,6 +95,7 @@ sensor:
     update_interval: 60s
     lambda: |-
       return ((id(VCC).state /3.30) * 100.00);    
+```
 
 6. Überprüfen Sie, ob der Temperatursensor erfolgreich eingerichtet wurde. Sie sollten in der Lage sein, die gemessenen Temperaturen in der ESPHome-logs oder über eine integrierte Home-Automatisierungsplattform wie Home Assistant zu sehen.
 
