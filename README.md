@@ -26,19 +26,9 @@ Hier sind die Schritte, um einen Temperatursensor zu bauen:
 
 ![mit baterry-Steckplatine](https://user-images.githubusercontent.com/99229976/212208127-2150147d-a407-48f9-8c90-6280cf008982.jpg)
 
-3. Installieren Sie ESPHome [https://www.esphome](https://esphome.io/). 
+3. Installieren Sie ESPHome [https://www.esphome](https://esphome.io/) und fügen sie dem code in Ihre YAML Datei.  
 
 ESPHome ist eine Open-Source-Software, die es ermöglicht, ESP8266 und ESP32-basierte Geräte in Home-Assistant einzubinden. ESPHome bietet eine einfache Methode, um die Firmware auf diesen Geräten zu erstellen und zu konfigurieren und ermöglicht die Verwendung von YAML-Konfigurationsdateien, um die Einrichtung von Sensoren, Aktoren und automatischen Regeln zu vereinfachen. Mit ESPHome können Sie auch die MQTT-Protokoll, das OTA-Firmware-Update und die Integration von Home-Assistant integrieren.
-
-![Screenshot 2023-01-13 004124](https://user-images.githubusercontent.com/99229976/212204420-26be2957-c39e-4a89-ba95-e7c3fa886c61.jpg)
-
-Home-Assistant https://www.home-assistant.io/ ist eine Open-Source-Software, die als smart home-Hub verwendet wird. Es ermöglicht die Steuerung und Automatisierung von Geräten und Diensten in einem intelligenten Zuhause. Es unterstützt eine Vielzahl von Protokollen und Plattformen, einschließlich Zigbee, Z-Wave, Philips Hue, Nest und vielen mehr. Es kann auf einem Raspberry Pi oder einem anderen Computer ausgeführt werden und ermöglicht die Erstellung von Szenen, die die Steuerung von Geräten und Diensten nach Zeitplänen oder Ereignissen automatisieren.
-
-![homeasstendjpg](https://user-images.githubusercontent.com/99229976/212205370-af1be8b6-884e-40aa-9f20-8709b1283d2d.jpg)
-
-![energy](https://user-images.githubusercontent.com/99229976/212205525-bb45ed86-fe0d-48b6-a44f-693175bbce19.jpg)
-
-![3d](https://user-images.githubusercontent.com/99229976/212207432-fa5be4e5-329c-4aa2-9ddf-2403cace3e53.jpg)
 
 ```yaml
 captive_portal:
@@ -72,6 +62,18 @@ sensor:
     lambda: |-
       return ((id(VCC).state /3.30) * 100.00);    
 ```
+
+![Screenshot 2023-01-13 004124](https://user-images.githubusercontent.com/99229976/212204420-26be2957-c39e-4a89-ba95-e7c3fa886c61.jpg)
+
+Home-Assistant https://www.home-assistant.io/ ist eine Open-Source-Software, die als smart home-Hub verwendet wird. Es ermöglicht die Steuerung und Automatisierung von Geräten und Diensten in einem intelligenten Zuhause. Es unterstützt eine Vielzahl von Protokollen und Plattformen, einschließlich Zigbee, Z-Wave, Philips Hue, Nest und vielen mehr. Es kann auf einem Raspberry Pi oder einem anderen Computer ausgeführt werden und ermöglicht die Erstellung von Szenen, die die Steuerung von Geräten und Diensten nach Zeitplänen oder Ereignissen automatisieren.
+
+![homeasstendjpg](https://user-images.githubusercontent.com/99229976/212205370-af1be8b6-884e-40aa-9f20-8709b1283d2d.jpg)
+
+![energy](https://user-images.githubusercontent.com/99229976/212205525-bb45ed86-fe0d-48b6-a44f-693175bbce19.jpg)
+
+![3d](https://user-images.githubusercontent.com/99229976/212207432-fa5be4e5-329c-4aa2-9ddf-2403cace3e53.jpg)
+
+
 Der deep_sleep Abschnitt legt fest, dass das System 20 Sekunden laufen und dann 900 Sekunden schlafen soll.
 Der i2c Abschnitt legt fest, dass der SDA-Pin an GPIO4, der SCL-Pin an GPIO5 angeschlossen ist und das Scannen auf "true" eingestellt ist.
 Der Sensorbereich listet drei Sensoren auf: ein BMP085-Sensor (für Temperatur und Druck), ein ADC-Sensor (zur Messung des VCC-Pins) und ein Template-Sensor (zur Messung des Batteriestands).
