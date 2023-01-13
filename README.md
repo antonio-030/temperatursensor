@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Antonio-030</h1>
-<h3 align="center">"Antonio, der erfahrene Systemintegrator: Vereinfachen Sie Ihre Smart Home-Automatisierung mit Home-Assistant und ESPHome"</h3>
+<h3 align="center">"Vereinfachen Sie Ihre Smart Home-Automatisierung mit Home-Assistant und ESPHome"</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=antonio-030&label=Profile%20views&color=0e75b6&style=flat" alt="antonio-030" /> </p>
 
