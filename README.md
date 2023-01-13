@@ -27,11 +27,48 @@ Home-Assistant https://www.home-assistant.io/ ist eine Open-Source-Software, die
 
 ![3d](https://user-images.githubusercontent.com/99229976/212207432-fa5be4e5-329c-4aa2-9ddf-2403cace3e53.jpg)
 
-4. Erstellen Sie eine YAML-Datei für Ihren Temperatursensor. In dieser Datei konfigurieren Sie den Mikrocontroller und den Temperatursensor. Sie müssen beispielsweise den Pin angeben, an dem der Sensor angeschlossen ist, und welches Protokoll verwendet wird.
+captive_portal:
+deep_sleep:
+  run_duration: 20s
+  sleep_duration: 900s
 
-5. Übertragen Sie die YAML-Datei auf den Mikrocontroller. Sie können dies über die ESPHome-Weboberfläche oder die ESPHome-Kommandozeile tun.      
+switch:
+  - platform: template
+    id: sleep_demo_switch
+    optimistic: true
 
-6. Überprüfen Sie, ob der Temperatursensor erfolgreich eingerichtet wurde. Sie sollten in der Lage sein, die gemessenen Temperaturen in der ESPHome-Weboberfläche oder über eine integrierte Home-Automatisierungsplattform wie Home Assistant zu sehen.
+script:
+  id: demo_script
+  mode: single
+  then:
+    - switch.toggle: sleep_demo_switch
+    - delay: 1s 
+
+i2c: 
+  sda: GPIO4
+  scl: GPIO5
+  scan: true
+sensor:
+  - platform: bmp085
+    temperature:
+      name: "Wohnzimmer Temperature"
+    pressure:
+      name: "Wohnzimmer Luftdruck"
+    update_interval: 5s
+    
+  - platform: adc
+    pin: VCC
+    id: "VCC"
+    internal: true
+    
+  - platform: template
+    name: "Wohnzimmer.Temperatur.battery_level"
+    unit_of_measurement: '%'
+    update_interval: 60s
+    lambda: |-
+      return ((id(VCC).state /3.30) * 100.00);    
+
+6. Überprüfen Sie, ob der Temperatursensor erfolgreich eingerichtet wurde. Sie sollten in der Lage sein, die gemessenen Temperaturen in der ESPHome-logs oder über eine integrierte Home-Automatisierungsplattform wie Home Assistant zu sehen.
 
 ![temperatur](https://user-images.githubusercontent.com/99229976/212207816-f2074677-9ffb-4ebf-8108-10bfa9c7bea8.jpg)
 
