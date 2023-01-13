@@ -26,7 +26,7 @@ Hier sind die Schritte, um einen Temperatursensor zu bauen:
 
 ![mit baterry-Steckplatine](https://user-images.githubusercontent.com/99229976/212208127-2150147d-a407-48f9-8c90-6280cf008982.jpg)
 
-3. Installieren Sie ESPHome https://esphome.io/guides/getting_started_hassio.html in Home-Assistant und fügen sie denn code am Ende Ihre YAML-Konfigurationsdateien.  
+3. Installieren Sie [ESPHome]:https://esphome.io/guides/getting_started_hassio.html in Home-Assistant und fügen sie denn code am Ende Ihre YAML-Konfigurationsdateien.  
 
 ESPHome ist eine Open-Source-Software, die es ermöglicht, ESP8266 und ESP32-basierte Geräte in Home-Assistant einzubinden. ESPHome bietet eine einfache Methode, um die Firmware auf diesen Geräten zu erstellen und zu konfigurieren und ermöglicht die Verwendung von YAML-Konfigurationsdateien, um die Einrichtung von Sensoren, Aktoren und automatischen Regeln zu vereinfachen. Mit ESPHome können Sie auch die MQTT-Protokoll, das OTA-Firmware-Update und die Integration von Home-Assistant integrieren.
 
