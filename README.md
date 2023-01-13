@@ -11,7 +11,7 @@ Hier sind die Schritte, um einen Temperatursensor zu bauen:
 
 2. Verbinden Sie den Temperatursensor mit dem Mikrocontroller. Der BMP180 hat vier Pins: VIN, GND, SCL, SDA. Verbinden Sie VIN mit 3,3V, GND mit GND, SCL mit D1, SDA mit D2 digtallen Pin des Mikrocontroller.
 
-![Untitled Sketch_Steckplatine](https://user-images.githubusercontent.com/99229976/212202038-242aec20-f547-4523-b372-ff4c3838d483.jpg)
+![mit baterry-Steckplatine](https://user-images.githubusercontent.com/99229976/212208127-2150147d-a407-48f9-8c90-6280cf008982.jpg)
 
 3. Installieren Sie ESPHome auf https://www.home-assistant.io/. ESPHome ist eine Open-Source-Firmware, die es ermöglicht, ESP8266- und ESP32-Mikrocontroller als Smart-Home-Geräte einzurichten.
 
