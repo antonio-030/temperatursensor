@@ -22,7 +22,7 @@ Hier sind die Schritte, um einen Temperatursensor zu bauen:
 
 ![GY-68_BMP180_130x](https://user-images.githubusercontent.com/99229976/212204934-e10046c8-d9d1-48da-9759-44fa759ab3a5.jpg)
 
-2. Verbinden Sie den Temperatursensor mit dem Mikrocontroller. Der BMP180 hat vier Pins: VIN, GND, SCL, SDA. Verbinden Sie VIN mit 3,3V, GND mit GND, SCL mit D1, SDA mit D2 digtallen Pin des Mikrocontroller.
+2. Verbinden Sie den Temperatursensor mit dem Mikrocontroller. Der BMP180 hat vier Pins: VIN, GND, SCL, SDA. Verbinden Sie `VIN mit 3,3V`, `GND mit GND`,` SCL mit D1`, `SDA mit D2` digtallen Pin des Mikrocontroller.
 
 ![mit baterry-Steckplatine](https://user-images.githubusercontent.com/99229976/212208127-2150147d-a407-48f9-8c90-6280cf008982.jpg)
 
