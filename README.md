@@ -31,4 +31,6 @@ Home-Assistant ist eine Open-Source-Software, die als smart home-Hub verwendet w
 
 6. Überprüfen Sie, ob der Temperatursensor erfolgreich eingerichtet wurde. Sie sollten in der Lage sein, die gemessenen Temperaturen in der ESPHome-Weboberfläche oder über eine integrierte Home-Automatisierungsplattform wie Home Assistant zu sehen.
 
+![temperatur](https://user-images.githubusercontent.com/99229976/212207816-f2074677-9ffb-4ebf-8108-10bfa9c7bea8.jpg)
+
 Beachten Sie, dass es je nach verwendetem Sensor und Mikrocontroller leichte Unterschiede in den Schritten geben kann. Stellen Sie sicher, dass Sie die Dokumentation und Datenblätter des verwendeten Sensors und Mikrocontroller sorgfältig lesen, bevor Sie mit dem Aufbau beginnen.
