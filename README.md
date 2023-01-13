@@ -19,7 +19,7 @@ ESPHome ist eine Open-Source-Software, die es ermöglicht, ESP8266 und ESP32-bas
 
 ![Screenshot 2023-01-13 004124](https://user-images.githubusercontent.com/99229976/212204420-26be2957-c39e-4a89-ba95-e7c3fa886c61.jpg)
 
-Home-Assistant ist eine Open-Source-Software, die als smart home-Hub verwendet wird. Es ermöglicht die Steuerung und Automatisierung von Geräten und Diensten in einem intelligenten Zuhause. Es unterstützt eine Vielzahl von Protokollen und Plattformen, einschließlich Zigbee, Z-Wave, Philips Hue, Nest und vielen mehr. Es kann auf einem Raspberry Pi oder einem anderen Computer ausgeführt werden und ermöglicht die Erstellung von Szenen, die die Steuerung von Geräten und Diensten nach Zeitplänen oder Ereignissen automatisieren.
+Home-Assistant https://www.home-assistant.io/ ist eine Open-Source-Software, die als smart home-Hub verwendet wird. Es ermöglicht die Steuerung und Automatisierung von Geräten und Diensten in einem intelligenten Zuhause. Es unterstützt eine Vielzahl von Protokollen und Plattformen, einschließlich Zigbee, Z-Wave, Philips Hue, Nest und vielen mehr. Es kann auf einem Raspberry Pi oder einem anderen Computer ausgeführt werden und ermöglicht die Erstellung von Szenen, die die Steuerung von Geräten und Diensten nach Zeitplänen oder Ereignissen automatisieren.
 
 ![homeasstendjpg](https://user-images.githubusercontent.com/99229976/212205370-af1be8b6-884e-40aa-9f20-8709b1283d2d.jpg)
 
