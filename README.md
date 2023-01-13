@@ -42,26 +42,16 @@ Home-Assistant https://www.home-assistant.io/ ist eine Open-Source-Software, die
 
 ```yaml
 captive_portal:
+
 deep_sleep:
   run_duration: 20s
   sleep_duration: 900s
-
-switch:
-  - platform: template
-    id: sleep_demo_switch
-    optimistic: true
-
-script:
-  id: demo_script
-  mode: single
-  then:
-    - switch.toggle: sleep_demo_switch
-    - delay: 1s 
-
+ 
 i2c: 
   sda: GPIO4
   scl: GPIO5
   scan: true
+  
 sensor:
   - platform: bmp085
     temperature:
@@ -82,6 +72,10 @@ sensor:
     lambda: |-
       return ((id(VCC).state /3.30) * 100.00);    
 ```
+Der deep_sleep Abschnitt legt fest, dass das System 20 Sekunden laufen und dann 900 Sekunden schlafen soll.
+Der i2c Abschnitt legt fest, dass der SDA-Pin an GPIO4, der SCL-Pin an GPIO5 angeschlossen ist und das Scannen auf "true" eingestellt ist.
+Der Sensorbereich listet drei Sensoren auf: ein BMP085-Sensor (für Temperatur und Druck), ein ADC-Sensor (zur Messung des VCC-Pins) und ein Template-Sensor (zur Messung des Batteriestands).
+Der BMP085-Sensor wird alle 5 Sekunden aktualisiert, der ADC-Sensor alle 60 Sekunden und der Template-Sensor alle 60 Sekunden und der template Sensor nutzt eine Lambda-Funktion um den Batteriestand zu berechnen.
 
 6. Überprüfen Sie, ob der Temperatursensor erfolgreich eingerichtet wurde. Sie sollten in der Lage sein, die gemessenen Temperaturen in der ESPHome-logs oder über eine integrierte Home-Automatisierungsplattform wie Home Assistant zu sehen.
 
