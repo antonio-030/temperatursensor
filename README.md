@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="(https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=matrix)" alt="antonio-030" /></a> </p>
 
-- 📫 So erreichen Sie mich **ctoni030@proton.me
+- 📫 So erreichen Sie mich ctoni030@proton.me
 
 
 <h3 align="left">Sprachen and Tools:</h3>
