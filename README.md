@@ -76,6 +76,7 @@ Der BMP085-Sensor wird alle 5 Sekunden aktualisiert, der ADC-Sensor alle 60 Seku
 
 ![energy](https://user-images.githubusercontent.com/99229976/212205525-bb45ed86-fe0d-48b6-a44f-693175bbce19.jpg)
 
+``Nachts``
 ![3d](https://user-images.githubusercontent.com/99229976/212207432-fa5be4e5-329c-4aa2-9ddf-2403cace3e53.jpg)
 
 
