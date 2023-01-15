@@ -1,9 +1,6 @@
 <h1 align="center">Hi 👋, Ich bin Antonio-030</h1>
 <h3 align="center">"Vereinfachen Sie Ihre Smart Home-Automatisierung mit Home-Assistant und ESPHome"</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=antonio-030&label=Profile%20views&color=0e75b6&style=flat" alt="antonio-030" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=ryo-ma&theme=matrix" alt="antonio-030" /></a> </p>
 
 - 📫 So erreichen Sie mich ctoni030@proton.me
 
