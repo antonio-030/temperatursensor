@@ -76,13 +76,6 @@ Mehr zur deep_sleep Funktion [hier](https://esphome.io/components/deep_sleep.htm
 
 ![homeasstendjpg](https://user-images.githubusercontent.com/99229976/212205370-af1be8b6-884e-40aa-9f20-8709b1283d2d.jpg)
 
-![energy](https://user-images.githubusercontent.com/99229976/212205525-bb45ed86-fe0d-48b6-a44f-693175bbce19.jpg)
-
-``Nacht``
-![3d](https://user-images.githubusercontent.com/99229976/212207432-fa5be4e5-329c-4aa2-9ddf-2403cace3e53.jpg)
-
-``Tag``
-
 
 6. Überprüfen Sie, ob der Temperatursensor erfolgreich eingerichtet wurde. Sie sollten in der Lage sein, die gemessenen Temperaturen in der ESPHome-logs oder über eine integrierte Home-Automatisierungsplattform wie Home Assistant zu sehen.
 
