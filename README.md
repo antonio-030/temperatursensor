@@ -61,10 +61,10 @@ sensor:
       return ((id(VCC).state /3.30) * 100.00);    
 ```
 
-Der deep_sleep Abschnitt legt fest, dass das System 20 Sekunden laufen und dann 900 Sekunden schlafen soll.
- ``In dieser Zeit ist der ESP8266 nicht erreichbar``.
+``Der deep_sleep Abschnitt legt fest, dass das System 20 Sekunden laufen und dann 900 Sekunden schlafen soll.
+  In dieser Zeit ist der ESP8266 nicht erreichbar.
   Um die Dauer des Tests zu erhöhen, kann die Variable "run_duration" in dem Code entsprechend angepasst werden. Sie können den Wert erhöhen, um die Dauer des Tests zu verlängern. 
-  
+``
 Der i2c Abschnitt legt fest, dass der SDA-Pin an GPIO4, der SCL-Pin an GPIO5 angeschlossen ist und das Scannen auf "true" eingestellt ist.
 Der Sensorbereich listet drei Sensoren auf: ein BMP085-Sensor (für Temperatur und Druck), ein ADC-Sensor (zur Messung des VCC-Pins) und ein Template-Sensor (zur Messung des Batteriestands).
 Der BMP085-Sensor wird alle 5 Sekunden aktualisiert, der ADC-Sensor alle 60 Sekunden und der Template-Sensor alle 60 Sekunden und der template Sensor nutzt eine Lambda-Funktion um den Batteriestand zu berechnen.
