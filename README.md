@@ -61,10 +61,12 @@ sensor:
       return ((id(VCC).state /3.30) * 100.00);    
 ```
 
-Der deep_sleep Abschnitt legt fest, dass das System 20 Sekunden laufen und dann 900 Sekunden schlafen soll.
+Der deep_sleep Abschnitt legt fest, dass das System 20 Sekunden laufen und dann 900 Sekunden schlafen soll. ``In dieser Zeit ist der ESP8266 nicht erreichbar``. 
 Der i2c Abschnitt legt fest, dass der SDA-Pin an GPIO4, der SCL-Pin an GPIO5 angeschlossen ist und das Scannen auf "true" eingestellt ist.
 Der Sensorbereich listet drei Sensoren auf: ein BMP085-Sensor (für Temperatur und Druck), ein ADC-Sensor (zur Messung des VCC-Pins) und ein Template-Sensor (zur Messung des Batteriestands).
 Der BMP085-Sensor wird alle 5 Sekunden aktualisiert, der ADC-Sensor alle 60 Sekunden und der Template-Sensor alle 60 Sekunden und der template Sensor nutzt eine Lambda-Funktion um den Batteriestand zu berechnen.
+
+Mehr zur deep_sleep Funktion [hier](https://esphome.io/components/deep_sleep.html?highlight=deep).
 
 ![Screenshot 2023-01-13 004124](https://user-images.githubusercontent.com/99229976/212258143-8122eda8-6d64-4575-aa72-6a05cb7eb025.jpg)
 
