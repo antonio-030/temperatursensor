@@ -81,6 +81,7 @@ Der BMP085-Sensor wird alle 5 Sekunden aktualisiert, der ADC-Sensor alle 60 Seku
 
 ``Tag``
 ![Wouhnung_tag!](/Bilder/Wohnung_tag.png)
+
 6. Überprüfen Sie, ob der Temperatursensor erfolgreich eingerichtet wurde. Sie sollten in der Lage sein, die gemessenen Temperaturen in der ESPHome-logs oder über eine integrierte Home-Automatisierungsplattform wie Home Assistant zu sehen.
 
 ![temperatur](https://user-images.githubusercontent.com/99229976/212207816-f2074677-9ffb-4ebf-8108-10bfa9c7bea8.jpg)
